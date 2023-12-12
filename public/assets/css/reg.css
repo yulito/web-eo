@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.center{
+    text-align: center;
+}
+.title{
+    color: rgb(0, 129, 17);
+}
+.logo{
+    font-size: 6rem;
+    background-color: #ffffffcc;
+    border-radius: 50%;
+    padding: 40px;
+}
+
+#w{
+    color: rgb(4, 0, 255);
+}
+#E{
+    color: red;
+}
+#B{
+    color: green;
+}
+#E2{
+    color: rgb(238, 96, 238);
+}
+#O{
+    color: orangered;
+}
+
+#w:hover,#E:hover,#B:hover,#E2:hover,#O:hover{
+    color: rgb(219, 169, 42);
+    text-shadow: 3px 3px 6px #fbff01;
+}
+
+.fontGrotesque{
+    font-family:'Bricolage Grotesque', sans-serif;
+}
+.flexcol{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.flexrow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+html{
+    background-image: url("../image/laugh.png");
+}
+
+body, html{
+    height: 100vh;
+    background-color: rgba(224, 224, 224, 0.849);    
+}
+.box{    
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 4px #000;
+}
+.container{
+    padding: 20px;
+    width: 400px;
+    background-color: rgb(255, 255, 64);    
+}
+label{
+    align-self: flex-start;
+    font-size: 18px;
+    font-weight: bold;
+}
+.input{
+    width: 100%;
+    border-radius: 8px;
+    border-color:1px solid gray;
+    height: 30px;
+    padding-left: 4px;
+    font-size: 18px;
+}
+.input:focus{
+    border: 1px solid #ffffff;
+    border-color: #ffffff;
+    box-shadow: 2px 2px 4px 4px #ff7474;
+}
+.btn{
+    padding: 6px;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+}
+.btn-submit{
+    background-color: #2542e4;
+}
+.visible{
+    visibility: visible;
+}
+.msg-error{    
+    position: fixed;
+    top: 12%;
+    left: 25%;
+
+    height: 90px;
+    width: auto;
+    padding: 20px;
+
+    border: 1px solid rgb(255, 0, 0);
+    border-radius: 10px;
+    background-color: rgb(218, 97, 97);
+    box-shadow: 2px 2px 4px 4px rgb(255, 0, 0);
+
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    visibility: hidden;
+}
+
+@media(max-width:600px){
+    .logo{
+        font-size: 4rem;
+    }
+    .msg-error{
+        left: 10%;
+        top: 8%;
+    }
+}

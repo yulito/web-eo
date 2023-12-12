@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin-top: 0;    
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.center{
+    text-align: center;
+}
+.contitle{
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #080808;
+    color: rgb(211, 10, 211);    
+}
+
+.flexcol{
+    padding-top: 18px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+body, html{
+    height: 100vh;
+    background-color: rgb(224, 224, 224);
+}
+.fontGrotesque{
+    font-family: 'Bricolage Grotesque', sans-serif !important;
+}
+.title{      
+    font-size: 24px;
+    font-weight: 600;  
+}
+.box{
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px #000;
+}
+.link{
+    color: rgb(0, 0, 255);
+}
+/* ------ DEFINIENDO GRID y DIMENSION PC------*/
+header{
+    background-color: rgba(250, 250, 166, 0.938);
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+}
+.webname, nav{
+    padding-top: 40px;
+}
+
+ul{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+}
+a{
+    color: #000;
+}
+li{  
+    margin-left: 20px;
+}
+li > select{
+    border: 1px solid #000;
+    border-radius: 8px;
+}
+select{
+    background-color: rgba(250, 250, 166, 0.938);
+    font-size: 18px;
+    color: #000;    
+}
+option{
+    color: rgb(250, 0, 0);
+    background-color: #f7e70d;
+}
+
+li:hover,li > a:hover, select:hover{
+    color: rgb(250, 0, 0);
+    background-color: #f7e70d;
+    border-radius: 8px;
+}
+main{
+    background-color: rgb(255, 168, 117);
+    grid-area: main;
+    padding: 5%;    
+}
+aside{
+    background-color: rgb(197, 197, 197);
+    grid-area:aside;
+}
+footer{
+    background-color: rgb(88, 86, 150);
+    grid-area: footer;
+    width: 100%;
+    padding-top: 1%;
+    font-size: 14px;
+}
+form{
+    width: 100%;
+    padding: 0 10% 10% 10%;
+}
+.editbg{
+    background-color:rgb(241, 241, 241);
+}
+.box-login{
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+}
+.input{
+    width: 100%;
+    height: 32px;
+    border-radius: 8px;
+    padding-left:4px;
+    font-size: 18px;
+}
+label{
+    align-self: flex-start;
+}
+textarea{
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Bricolage Grotesque', sans-serif !important;
+}
+.jokebg{
+    background-color: #f5f5f5fb; 
+}
+.btn{
+    padding: 6px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.btn-submit{
+    background-color: rgb(42, 233, 83);
+}
+.btn-delete{
+    background-color: red;
+    color: #ffffff;
+}
+.btn-info{
+    background-color: rgb(0, 204, 255);
+    color: #ffffff;
+}
+/* ----------- ESTILANDO EL TABLE ----------- */
+
+/* ---- general ---- */
+.box-table{
+    height: 300px;
+    width: 90%;    
+    margin-bottom: 40px; 
+    overflow-y: auto;
+    overflow-x: auto;   
+}
+table{    
+    width: 100%;        
+    text-align: center;    
+    background-color: #000000d1;
+    color: #bfbfbf;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;        
+}
+
+/* ---- tabla redondeada ---- */
+table, th{
+    border-radius: 10px;
+}
+
+/* ---- celda general ---- */
+table, th, td{ 
+    height: 40px;
+    border: 1px solid #ffffff;
+    border-collapse: collapse;  /* Este solo deja 1 linea de borde */
+}
+
+/* ---- encabezado o titulos ---- */
+th{
+    font-size: 1em;
+    font-weight: 800;
+    background-color:#000;
+}
+
+/* ---- hover en celdas individuales ---- */
+.cel-color-see:hover{
+    background-color: rgb(96, 226, 226);
+    color: #000;
+}
+.cel-color-edit:hover{
+    background-color: rgb(246, 250, 37);
+    color: #000;
+}
+.cel-color-delete:hover{
+    background-color: rgba(245, 38, 38, 0.89);
+    color: #000;
+}
+
+/* ---- hover en fila ---- */
+tr:hover{
+    background-color: rgba(24, 99, 15, 0.89);
+}
+
+/*--------------- LISTA SEGUN CATEGORIAS ------------*/
+.box-list-cat{
+    height: 600px;
+    width: 100%;
+    margin: 20px;
+    overflow-y: auto;
+    justify-content: flex-start !important;
+}
+.cat-item-list{
+    height: 40px;
+    width: 80%;
+    background-color: rgb(73, 140, 179);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    line-height: 40px;
+}
+
+.cat-item-list > a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+.cat-item-list:hover{
+    background-color: rgb(39, 87, 116);
+}
+
+/*---------Contenedor principal--------*/
+.main-content{
+    height: 100%;
+    width: 100%;
+    border: 1px solid gainsboro;
+    background-image: url("../image/ok.png");
+    background-color: rgb(77, 247, 247);
+    border-radius: 10px;
+    padding: 40px;
+    /* overflow: auto; */ /*OJO CON ESTO y con los height de los main*/
+}
+
+.item-story{
+    padding: 20px;
+    background-color: rgb(118, 228, 9); 
+    min-width: 200px; 
+}
+.stories{
+    background-color: rgb(232, 250, 66);
+    margin: 4px;
+    padding: 8px;
+    width: 300px;
+}
+.stories:hover{
+    background-color: rgb(250, 207, 66);
+}
+.btn-play{
+    cursor: pointer;
+}
+.heart-span{
+    cursor:pointer;
+}
+.heart-select{
+    color:rgba(245, 38, 38, 0.89);
+}
+.fav-span{
+    cursor:pointer;
+}
+.fav-select{
+    color: #fdec02;
+}
+/*-------------------------------------*/
+
+/* ------ DIMENSIONES SMARTPHONE ------*/
+body{
+    display: grid;
+    gap:10px;
+    grid-template:
+    "header" auto
+    "main"   auto
+    "aside"  auto
+    "footer" 20px
+}
+/* ------ DIMENSIONES TABLET ------*/
+@media (min-width:600px){
+    body{
+        display: grid;
+        grid-template:
+        "header header" 80px
+        "aside   aside" auto
+        "main   main  " auto      
+        "footer footer" 40px /
+        auto    auto   
+    }
+    ul,select{
+        font-size: 20px;
+    }
+    .stories{
+        width: 500px;
+    }
+    .box-table{
+        overflow-x: hidden;
+    }
+}
+/* ------ DIMENSIONES PC ------*/
+@media (min-width:900px){
+    body{
+        display: grid;
+        grid-template:
+        "header header header" 80px
+        "main   main    aside" auto
+        "footer footer footer" 50px /
+        auto     auto    300px
+    }
+    .title{
+        font-size: 3rem;
+    }
+    ul,select{
+        font-size: 24px;
+    }
+    footer{
+        font-size: 18px;
+    }
+    .stories{
+        width: 800px;
+    }
+    .box-table{
+        overflow-x: hidden;
+    }
+}
+
+/* ----- ANIMACION TITULO -----*/
+#w{
+    color: rgb(4, 0, 255);
+}
+#E{
+    color: red;
+}
+#B{
+    color: green;
+}
+#E2{
+    color: violet;
+}
+#O{
+    color: orangered;
+}
+
+.a-item{
+    padding-top: 14px;
+}
+.a-item > a{    
+    color: rgb(85, 3, 85);
+}
+.a-item > a:hover{
+    color:rgb(4, 0, 255);
+}
+
+/* -------- ABOUT --------- */
+.title-about{
+    height: 100px;
+    line-height: 100px;    
+    color: #bfbfbf;
+}
+.about{
+    background-color: #000000de;
+    border-radius: 8px;
+}
+.about-box{
+    background-image: url("../image/laugh.png");
+    background-color: #37bd02e5;
+}
+#aboutText{
+    padding: 20px;
+    width: auto;
+    font-size: 24px;
+    color: #ffffff;
+}
